@@ -1,4 +1,16 @@
-#El signo de gato nos ayuda a definir un comentrario
-#ignorar todos los  documentos con terminacion .txt 
+# ignora los archivos terminados en .a
+* .a
 
- *.txt
+# pero no lib.a, aun cuando habia ingorado los archivos terminados en .a
+!lib.a
+
+# ignora unicamente el archivo TODO de la raiz, no subir/TODO
+/TODO
+
+# ignora todos los archivos del directorio build/
+build/
+
+# ignora doc/notes.txt, pero no este: doc/server/arch.txt
+doc/*.txt
+
+
